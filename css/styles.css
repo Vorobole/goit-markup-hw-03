@@ -29,6 +29,10 @@ ul {
 .header {
   display: flex;
   gap: 40px;
+  border-bottom: 1px solid #e7e9fc;
+}
+img {
+  display: block;
 }
 .logo {
   color: var(--iris, #4d5ae5);
