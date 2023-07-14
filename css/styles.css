@@ -14,7 +14,7 @@ body {
   color: var(--slate);
 }
 
-/* --------------------header-------------------- */
+/* ==========================header=============================== */
 h1 h2 h3 h4 h5 h6 {
   margin: 0;
 }
@@ -26,10 +26,12 @@ ul {
   padding: 0;
   margin: 0;
 }
+header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .header-menu {
   display: flex;
   gap: 40px;
-  border-bottom: 1px solid #e7e9fc;
 }
 .container {
   width: 1158px;
@@ -127,7 +129,7 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* index-section1 */
+/* ==============================index-section1========================== */
 .hero {
   background: var(--navyblue);
 }
@@ -175,7 +177,7 @@ img {
   cursor: pointer;
 }
 
-/* index-section2 */
+/* ===========================index-section2======================== */
 .qualities-title {
   color: var(--navyblue, #2e2f42);
   font-family: Roboto;
@@ -201,7 +203,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* index-section3 */
+/* ============================index-section3=========================== */
 .doing-title {
   color: var(--navyblue, #2e2f42);
   font-family: Roboto;
@@ -216,7 +218,7 @@ img {
 .doing .list {
   list-style: none;
 }
-/* index-section4 */
+/* ===========================index-section4============================ */
 .team {
   background: var(--cloud, #f4f4fd);
 }
@@ -249,7 +251,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* portfolio */
+/* =================================portfolio============================ */
 
 .direction .list {
   list-style: none;
@@ -310,9 +312,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* footer */
+/* ==================================footer=============================== */
 .footer {
   background: var(--navyblue);
+  padding: 100px 0 100px 159px;
 }
 .footer-logo {
   color: var(--iris, #4d5ae5);
@@ -323,12 +326,16 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-logo .span {
   color: #f4f4fd;
 }
-.footer-p {
+.footer-text {
   color: var(--cloud);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
