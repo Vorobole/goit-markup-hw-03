@@ -315,7 +315,7 @@ img {
 /* ==================================footer=============================== */
 .footer {
   background: var(--navyblue);
-  padding: 100px 0 100px 159px;
+  padding: 100px 0;
 }
 .footer-logo {
   color: var(--iris, #4d5ae5);
