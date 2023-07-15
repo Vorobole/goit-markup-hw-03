@@ -223,6 +223,9 @@ img {
   letter-spacing: 0.02em;
 }
 /* ============================index-section3=========================== */
+.doing {
+  padding-bottom: 120px;
+}
 .doing-title {
   color: var(--navyblue, #2e2f42);
   font-family: Roboto;
@@ -233,17 +236,22 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-.doing .list {
+.doing-list {
   list-style: none;
+  display: flex;
+  gap: 24px;
+}
+.doing-item {
+  width: calc((100% - 48px) / 3);
 }
 /* ===========================index-section4============================ */
 .team {
   background: var(--cloud, #f4f4fd);
+  padding: 120px 0;
 }
-.team-li {
-  background-color: #ffffff;
-}
+
 .team-title {
   color: var(--navyblue, #2e2f42);
   font-family: Roboto;
@@ -254,8 +262,18 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-.team-li-title {
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-item-title {
   color: var(--navyblue);
   font-family: Roboto;
   font-size: 20px;
@@ -263,12 +281,18 @@ img {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  text-align: center;
+  margin-bottom: 8px;
 }
-.team-li-p {
+.team-item-text {
   color: var(--slate, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
+}
+.team-subitem {
+  padding: 32px 16px;
 }
 /* =================================portfolio============================ */
 
