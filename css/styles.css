@@ -185,6 +185,9 @@ img {
 }
 
 /* ===========================index-section2======================== */
+.qualities {
+  padding: 120px 0;
+}
 .qualities-title {
   color: var(--navyblue, #2e2f42);
   font-family: Roboto;
@@ -194,8 +197,16 @@ img {
   line-height: 40px;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  visibility: hidden;
 }
-.qualities-li-title {
+.qualities-list {
+  display: flex;
+  gap: 24px;
+}
+.qualities-list-item {
+  width: calc((100% - 72px) / 4);
+}
+.qualities-item-title {
   color: var(--navyblue);
   font-family: Roboto;
   font-size: 20px;
@@ -203,8 +214,9 @@ img {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
-.qualities-li-p {
+.qualities-item-text {
   color: var(--slate, #434455);
   font-size: 16px;
   line-height: 1.5;
