@@ -142,6 +142,7 @@ img {
   line-height: 1.07;
   letter-spacing: 0.02em;
   max-width: 496px;
+  text-align: center;
 }
 .hero-button {
   background-color: var(--iris, #4d5ae5);
@@ -305,7 +306,7 @@ img {
 }
 /* =================================portfolio============================ */
 
-.derection {
+.direction {
   padding-top: 96px;
   padding-bottom: 120px;
 }
