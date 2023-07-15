@@ -13,8 +13,6 @@ body {
   background: var(--white);
   color: var(--slate);
 }
-
-/* ==========================header=============================== */
 h1 h2 h3 h4 h5 h6 {
   margin: 0;
 }
@@ -26,6 +24,7 @@ ul {
   padding: 0;
   margin: 0;
 }
+/* =============================header=============================== */
 header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -139,7 +138,6 @@ img {
   font-family: Roboto;
   font-size: 56px;
   font-style: normal;
-  text-align: center;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -152,8 +150,8 @@ img {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.64px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   cursor: pointer;
   display: block;
   min-width: 169px;
@@ -296,8 +294,18 @@ img {
 }
 /* =================================portfolio============================ */
 
-.direction .list {
+.derection {
+  padding: 96px 0 120px 0;
+}
+.direction-title {
+  visibility: hidden;
+}
+.direction-list-btn {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 .direction-button {
   background: var(--cloud, #f4f4fd);
@@ -309,6 +317,9 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 .direction-button:hover {
   background: var(--ocean, #404bbf);
@@ -320,6 +331,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 .direction-button:focus {
   background: var(--ocean, #404bbf);
@@ -331,15 +343,24 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: 1px solid transparent;
 }
-.direction .list {
-  list-style: none;
+.direction-list-img {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
-.derection .list .link {
+.derection-item-img {
+  width: calc((100% - 48px) / 3);
+  text-transform: none;
+}
+.derection-item-link {
   text-decoration: none;
+  list-style: none;
   background: var(--white);
 }
-.direction-li-title {
+.direction-item-title {
   color: var(--navyblue, #2e2f42);
   font-family: Roboto;
   font-size: 20px;
@@ -349,11 +370,17 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.direction-li-p {
+.direction-item-text {
   color: var(--slate, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.direction-item-subitem {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 /* ==================================footer=============================== */
 .footer {
